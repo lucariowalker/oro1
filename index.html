@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TradingView Chart</title>
+    <style>
+        body { margin: 0; height: 100%; background-color: #f7f7f7; }
+        .tradingview-widget-container { position: relative; width: 100%; height: 100%; }
+        .tradingview-widget-container__widget { position: absolute; width: 100%; height: 100%; }
+    </style>
+</head>
+<body>
+    <div class="tradingview-widget-container">
+        <div id="tradingview_38e79"></div>
+        <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js" async>
+            {
+                "autosize": true,
+                "symbol": "TVC:GOLD",
+                "interval": "240",
+                "timezone": "America/New_York",
+                "theme": "light",
+                "style": "1",
+                "locale": "es",
+                "backgroundColor": "#f7f7f7",
+                "withdateranges": true,
+                "hide_side_toolbar": false,
+                "allow_symbol_change": true,
+                "watchlist": ["TVC:DXY", "CAPITALCOM:US30", "CAPITALCOM:US100", "FX:EURUSD", "OANDA:USDCAD", "TVC:USOIL"],
+                "calendar": false
+            }
+        </script>
+    </div>
+</body>
+</html>
